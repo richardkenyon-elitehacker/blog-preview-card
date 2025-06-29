@@ -137,3 +137,16 @@ body {
     margin: 0;
     display: block;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 8px 8px 0 0 black;
+  }
+}
